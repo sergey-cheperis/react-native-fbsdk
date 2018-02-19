@@ -47,7 +47,7 @@ public class FBSDKPackage implements ReactPackage {
         InternalSettings.setCustomUserAgent(VERSION_TO_RELEASE);
         return Arrays.<NativeModule>asList(
                 new FBAccessTokenModule(reactContext),
-                new FBAppEventsLoggerModule(reactContext),
+                // new FBAppEventsLoggerModule(reactContext),
                 new FBAppInviteDialogModule(reactContext, mCallbackManager),
                 new FBGameRequestDialogModule(reactContext, mCallbackManager),
                 new FBGraphRequestModule(reactContext),
