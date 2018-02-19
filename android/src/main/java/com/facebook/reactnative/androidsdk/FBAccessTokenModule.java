@@ -64,7 +64,7 @@ public class FBAccessTokenModule extends ReactContextBaseJavaModule{
      */
     @ReactMethod
     public void setCurrentAccessToken(ReadableMap accessTokenMap) {
-        AccessToken accessToken = Utility.buildAccessToken(accessTokenMap);
+        AccessToken accessToken = accessTokenMap != null ? Utility.buildAccessToken(accessTokenMap) : null;
         AccessToken.setCurrentAccessToken(accessToken);
     }
 
