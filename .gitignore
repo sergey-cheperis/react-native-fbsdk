@@ -29,6 +29,7 @@ Pods/
 # Editor
 #
 .idea/
+*.iml
 
 # node.js
 #
